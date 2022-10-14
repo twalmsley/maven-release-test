@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>uk.aosd.test</groupId>
     <artifactId>test</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>test</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
@@ -29,7 +29,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/twalmsley/maven-release-test.git</developerConnection>
-      <tag>test-1.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
     
     <distributionManagement>
