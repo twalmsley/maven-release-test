@@ -1,6 +1,6 @@
 # Shows how to use mvn release plugin
 
-This tries to deploy to a local directory called `releases` but doesn't seem to do that. It says it has put the files in the `releases` folder but it is empty - are the files going anywhere??
+Files are deployed to `./target/checkout/releases` as well as the local `~/.m2/repository`
 
 Steps:
 
