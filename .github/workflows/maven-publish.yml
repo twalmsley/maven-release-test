@@ -51,7 +51,9 @@ jobs:
       run: mvn release:perform
 
     - name: Merge release into main
-      run: git checkout main; git merge release/${{ inputs.releaseVersion }}
+      run: |
+        git checkout main; git merge release/${{ inputs.releaseVersion }}
+        git push
 
     - name: Create Release
       id: create_release
