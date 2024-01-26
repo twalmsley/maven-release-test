@@ -33,7 +33,10 @@ jobs:
         # settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Create Release Branch
-      run: git checkout -b release/${{ inputs.releaseVersion }}
+      run: |
+        git checkout -b release/${{ inputs.releaseVersion }}
+        git config --global user.name "ReleaseBot"
+        git config --global user.email "release-bot"
     
     - name: Build
       run: mvn -B package --file pom.xml
